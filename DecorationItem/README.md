@@ -1,0 +1,4 @@
+- `SimpleDecoration`：实现简单的分割线的`ItemDecoration`
+- `LabelDecoration`：实现简单标签的`ItemDecoration`
+- `SectionDecoration`：实现分组标签的`ItemDecoration`
+- `StickyHeadDecoration`：实现分组标签并带有粘性头部（吸顶模式）的`ItemDecoration`

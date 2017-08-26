@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context="com.whf.imageselector.MainActivity">
+   <ImageView
+       android:id="@+id/list_item_imageView"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_alignParentLeft="true"
+       android:background="@drawable/pic_dir"
+       android:paddingLeft="13dp"
+       android:paddingTop="12dp"
+       android:paddingRight="13dp"
+       android:paddingBottom="20dp"
+       android:src="@drawable/pictures_no"
+       android:scaleType="fitXY"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_item_imageView"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:id="@+id/textView_dir_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="所有照片"
+            android:textSize="21sp"/>
+        <TextView
+            android:id="@+id/textView_dir_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100张"
+            android:textSize="21sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/dir_choose"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

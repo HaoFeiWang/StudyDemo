@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="skin_colorList">#282727</color>
+    <color name="skin_colorMenu">#f9520b</color>
+
+    <color name="skin_colorList_red">#1120e7</color>
+    <color name="skin_colorMenu_red">#0a0c81</color>
+
+    <color name="skin_colorList_green">#0a960f</color>
+    <color name="skin_colorMenu_green">#208311</color>
+</resources>

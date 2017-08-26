@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.whf.keeplive">
+
+    <application
+        android:name=".LiveApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".lockScreen.LockScreenReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <!-- excludeFromRecents="true" 代表当前Activity不会显示在最近使用的程序列表中 -->
+        <!-- finishOnTaskLaunch="true" 代表是否关闭已启动的Activity当用户重新启动这个任务时 -->
+        <activity
+            android:name=".lockScreen.LockScreenActivity"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.LockScreen">
+        </activity>
+
+        <service
+            android:name=".foregroundService.ForegroundService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".foregroundService.ForegroundService$InnerService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>

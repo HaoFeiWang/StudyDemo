@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/menu_change_bg"
+              android:title="插件式换肤"/>
+        <item android:id="@+id/menu_recover"
+              android:title="恢复默认"/>
+</menu>
